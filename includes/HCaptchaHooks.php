@@ -1,6 +1,6 @@
 <?php
 
-class HCaptchaNoCaptchaHooks {
+class HCaptchaHooks {
 	/**
 	 * Adds extra variables to the global config
 	 *
