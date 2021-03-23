@@ -9,14 +9,14 @@ class HCaptchaHooks {
 	 */
 	public static function onResourceLoaderGetConfigVars( array &$vars ) {
 		global $wgHCaptchaSiteKey;
-		//global $wgCaptchaClass;
+		// global $wgCaptchaClass;
 
 		//if ( $wgCaptchaClass === 'hCaptcha' ) {
 		$vars['wgConfirmEditConfig'] = [
 			'hCaptchaSiteKey' => $wgHCaptchaSiteKey,
 			'hCaptchaScriptURL' => 'https://hcaptcha.com/1/api.js'
 		];
-		//}
+		// }
 
 		return true;
 	}
